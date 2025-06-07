@@ -1,54 +1,99 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+Here’s a **README.md** file you can use for your project:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+# Task Manager App
 
-1. Install dependencies
+**By: Mohd Fazal Khan**
+
+## 📝 Description
+
+Task Manager is a simple and elegant React Native mobile application designed to help users manage their daily tasks efficiently.
+The app supports the following features:
+
+* Adding new tasks with priority levels (High, Medium, Low).
+* Completing and undoing tasks.
+* Editing existing tasks.
+* Deleting tasks.
+* Persisting tasks locally using AsyncStorage.
+* Scheduling push notifications for task reminders (via Expo Notifications API).
+* Smooth UI animations using React Native Animated API.
+* Responsive and attractive design with priority-based color coding.
+
+This app was built using **React Native** and **Expo**, and is compatible with both Android and iOS devices.
+
+---
+
+## 🚀 Getting Started with Expo Go
+
+### Prerequisites
+
+* Node.js and npm installed
+
+* Expo CLI installed globally:
+
+  ```bash
+  npm install -g expo-cli
+  ```
+
+* Expo Go app installed on your physical Android or iOS device (from Play Store or App Store).
+
+### Steps to Run the App
+
+1. **Clone the repository** (if using version control):
+
+   ```bash
+   git clone <your-repo-url>
+   ```
+
+2. **Navigate to the project folder**:
+
+   ```bash
+   cd task-manager-app
+   ```
+
+3. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+4. **Start the development server**:
 
    ```bash
-   npx expo start
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+5. **Scan the QR code** using Expo Go app on your device to run the app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ⚠️ Notes & Considerations
 
-## Get a fresh project
+* **Notifications permission**: The app requests notification permissions on app launch. Notifications will only work on physical devices (not simulators).
+* **AsyncStorage**: Tasks are saved locally using AsyncStorage so that they persist even if the app is closed.
+* **Notification cancelation**: When a task is marked as complete, any scheduled notification for that task is canceled to avoid unnecessary reminders.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 💡 Design Choices & Challenges
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Design Choices:
 
-## Learn more
+* I used a **priority-based color system** to quickly identify high, medium, and low-priority tasks visually.
+* Implemented **animations** on task items using React Native's `Animated` API to make task addition/editing feel smoother.
+* Added an **edit feature** to allow users to modify tasks inline without navigating away from the task list.
+* Used **rounded headers** and modern design with subtle shadows and colors to keep the UI clean and friendly.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Challenges Faced:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* **Notification handling**: Scheduling and canceling notifications per task required careful management of notification IDs.
+* **Persistence**: Ensuring that edited tasks and task states (completed or not) persist correctly using AsyncStorage.
+* **Cross-platform behavior**: Notifications behave slightly differently on Android vs iOS. Testing on both platforms took some extra time.
+* **Keyboard management**: Making sure the input fields work well with the on-screen keyboard and that the UI remains responsive.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+Enjoy using the Task Manager App!
+If you like it, feel free to contribute or suggest improvements. ✌️
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# Task-Manager
->>>>>>> 2f972473f157ac2eeaeaa59eb2b933ebd13391bd
