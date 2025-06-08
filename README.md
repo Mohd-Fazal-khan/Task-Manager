@@ -1,7 +1,3 @@
-Here’s a **README.md** file you can use for your project:
-
----
-
 # Task Manager App
 
 **By: Mohd Fazal Khan**
