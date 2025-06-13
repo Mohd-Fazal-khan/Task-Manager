@@ -45,7 +45,7 @@ This app was built using **React Native** and **Expo**, and is compatible with b
 2. **Navigate to the project folder**:
 
    ```bash
-   cd task-manager-app
+   cd Task-Manager
    ```
 
 3. **Install dependencies**:
