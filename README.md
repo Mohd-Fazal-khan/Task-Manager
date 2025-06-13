@@ -39,7 +39,7 @@ This app was built using **React Native** and **Expo**, and is compatible with b
 1. **Clone the repository** (if using version control):
 
    ```bash
-   git clone https://github.com/Mohd-Fazal-khan/Task-Manager
+   git clone https://github.com/Mohd-Fazal-khan/Task-Manager.git
    ```
 
 2. **Navigate to the project folder**:
